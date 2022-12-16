@@ -68,7 +68,7 @@ server.post(
     try {
       if (!req.files) throw new Error('Please upload many cat pics!');
 
-      req.files.map(
+      req.files.forEach(
         async ({ originalname, path, filename }) =>
           await pool.query(
             `INSERT INTO pictures (name, path, filename) VALUES ($1, $2, $3) RETURNING *`,
