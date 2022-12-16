@@ -47,10 +47,10 @@ Level 1:
 
 Level 2:
 
-[] .Move all your file upload logic to a separate module inside a utils folder
-[] .Implement a file filter to only accept images (https://www.npmjs.com/package/multer#filefilter); for this you can check the file’s original name (https://www.npmjs.com/package/multer#api), and have a regex to check the extension (https://www.regextester.com/?fam=116725, https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/match) or you can check the mimetype of the file: https://www.npmjs.com/package/multer#api) and send an error when passed something else
-[] .Create a new POST route handler for /upload-cat-pics
-[] .Add the following after the first form in the HTML boilerplate:
+[x] .Move all your file upload logic to a separate module inside a utils folder
+[x] .Implement a file filter to only accept images (https://www.npmjs.com/package/multer#filefilter); for this you can check the file’s original name (https://www.npmjs.com/package/multer#api), and have a regex to check the extension (https://www.regextester.com/?fam=116725, https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/match) or you can check the mimetype of the file: https://www.npmjs.com/package/multer#api) and send an error when passed something else
+[x] .Create a new POST route handler for /upload-cat-pics
+[x] .Add the following after the first form in the HTML boilerplate:
 
 <br />
 
@@ -66,12 +66,12 @@ Level 2:
     </div>
 </form>
 
-[] .This time, you have to handle a multi file upload (https://www.npmjs.com/package/multer#arrayfieldname-maxcount)
-[] .Return all the uploaded pictures to the client
+[x] .This time, you have to handle a multi file upload (https://www.npmjs.com/package/multer#arrayfieldname-maxcount)
+[x] .Return all the uploaded pictures to the client
 
 Level 3:
 
-[] .Create a table pictures in a database with the following columns: pic_id, name (original filename), path (where the picture is stored)
-[] .When the user uploads a single picture, or multiple pictures, it should get stored in the database
-[] .Insert a link into your HTML that will point to /get-pics & create GET a route handler for /get-pics
-[] .This route handler should get all the pictures previously uploaded in the database and return them as a list of links to the user. The user should be able to click on a link, and view the picture
+[x] .Create a table pictures in a database with the following columns: pic_id, name (original filename), path (where the picture is stored)
+[x] .When the user uploads a single picture, or multiple pictures, it should get stored in the database
+[x] .Insert a link into your HTML that will point to /get-pics & create GET a route handler for /get-pics
+[x] .This route handler should get all the pictures previously uploaded in the database and return them as a list of links to the user. The user should be able to click on a link, and view the picture
